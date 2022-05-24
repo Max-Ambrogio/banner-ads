@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 0. Reset ================================= */
+/* 
+If you want to add partials, use Sass Modules via @use:
+@use 'variables';
+
+Usage: partial-name.variable/mixin/function-name:
+background: variables.$primary-color;
+*/
+/* 1. Main Layout ================================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #2e3032;
+}
+
+/* 2. Content ================================= */
+.ad {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid;
+}
+.ad.ad-300-250 {
+  width: 300px;
+  height: 250px;
+}
+.ad.ad-728-90 {
+  width: 728px;
+  height: 90px;
+}
+.ad.ad-150-600 {
+  width: 150px;
+  height: 600px;
+}
+
+.ad-val {
+  background-color: #FF4655;
+}
+.ad-val .logo {
+  position: absolute;
+  width: 50%;
+  right: 5%;
+}
+.ad-val .box {
+  height: 40%;
+  background-color: black;
+  width: 10%;
+  position: absolute;
+}
+.ad-val .one {
+  right: 80%;
+}
+.ad-val .two {
+  right: 50%;
+}
+.ad-val .three {
+  right: 20%;
+}
+.ad-val button {
+  position: absolute;
+  left: 54%;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+  width: 32%;
+  box-shadow: 2px 3px 0px 0px #8a2a21;
+  background: linear-gradient(to bottom, #c62d1f 5%, #f56c62 100%);
+  background-color: #c62d1f;
+  border-radius: 15px;
+  border: 1px solid #d02718;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  padding: 4px 15px;
+  text-decoration: none;
+  transition: box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s, -webkit-transform 0.5s;
+  opacity: 0;
+}
+.ad-val button:hover {
+  -webkit-transform: translate(3px, 2px);
+          transform: translate(3px, 2px);
+  box-shadow: 0px 0px 0px 0px #8a2a21;
+}
+.ad-val .jett-text {
+  position: absolute;
+  top: 10%;
+}
+.ad-val .jett-text p {
+  font-family: "Black Ops One", cursive;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 25pt;
+  width: 100%;
+}
+.ad-val .product-photo {
+  position: absolute;
+  width: 90%;
+  left: -15%;
+  top: -10%;
+  z-index: 2;
+}
+.ad-val.ad-728-90 .product-photo {
+  position: absolute;
+  width: 40%;
+  left: -5%;
+  top: -5%;
+}
+.ad-val.ad-728-90 .logo {
+  width: 35%;
+  right: 20%;
+}
+.ad-val.ad-728-90 button {
+  width: 15%;
+  left: 54%;
+}
+.ad-val.ad-728-90 .box {
+  width: 3%;
+}
+.ad-val.ad-150-600 {
+  margin-left: 40px;
+}
+.ad-val.ad-150-600 .product-photo {
+  position: absolute;
+  width: 200%;
+  left: -40%;
+}
+.ad-val.ad-150-600 .jett-text {
+  left: -2%;
+  top: 35%;
+}
+.ad-val.ad-150-600 .logo {
+  width: 89%;
+}
+.ad-val.ad-150-600 button {
+  width: 71%;
+  left: 13%;
+}
+/*# sourceMappingURL=main.css.map */

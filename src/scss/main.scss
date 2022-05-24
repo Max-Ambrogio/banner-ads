@@ -1,0 +1,180 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+
+/* 
+If you want to add partials, use Sass Modules via @use:
+@use 'variables';
+
+Usage: partial-name.variable/mixin/function-name:
+background: variables.$primary-color;
+*/
+
+@use 'reset';
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(46, 48, 50);
+}
+
+/* 2. Content ================================= */
+.ad{
+	position: relative;
+	overflow: hidden;
+	border: 1px solid;
+
+
+	&.ad-300-250{
+		width: 300px;
+		height: 250px;
+	}
+	
+	&.ad-728-90{
+		width: 728px;
+		height: 90px;
+	}
+	
+	&.ad-150-600{
+		width: 150px;
+		height: 600px;
+	}
+}
+
+.ad-val{
+	background-color: #FF4655;
+
+	.logo{
+		position: absolute;
+		width: 50%;
+		right: 5%;
+	}
+
+	.box{
+		height: 40%;
+		background-color: black;
+		width: 10%;
+		position: absolute;
+	}
+	.one{
+		right: 80%;
+	}
+	.two{
+		right: 50%;
+	}
+	.three{
+		right: 20%;
+	}
+
+	button{
+		position: absolute;
+		left: 54%;
+		font-family: sans-serif;
+		font-weight: bold;
+		font-size: 10pt;
+		width: 32%;
+		box-shadow: 2px 3px 0px 0px #8a2a21;
+		background:linear-gradient(to bottom, #c62d1f 5%, #f56c62 100%);
+		background-color:#c62d1f;
+		border-radius:15px;
+		border:1px solid #d02718;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		padding:4px 15px;
+		text-decoration:none;
+		transition: transform .5s, box-shadow .5s;
+		opacity: 0;
+		
+		
+	}
+	button:hover{
+		// transform: scale(1.1);
+		transform: translate(3px,2px);
+		box-shadow: 0px 0px 0px 0px #8a2a21;
+	}
+
+	.jett-text{
+		position: absolute;
+		top: 10%;
+
+		p{
+			font-family: 'Black Ops One', cursive;
+			text-transform: capitalize;
+			font-weight: bold;
+			font-size: 25pt;
+			width: 100%;
+		}
+	}
+
+	.product-photo{
+		position: absolute;
+		width: 90%;
+		left: -15%;
+		top: -10%;
+		z-index: 2;
+	}
+	&.ad-728-90{
+		.product-photo{
+			position: absolute;
+			width: 40%;
+			left: -5%;
+			top: -5%;
+		}
+
+		.logo{
+			width: 35%;
+			right: 20%;
+		}
+
+		button{
+			width: 15%;
+			left: 54%;
+		}
+
+		.box{
+			width: 3%;
+		}
+	}
+	&.ad-150-600{
+		margin-left: 40px;
+		.product-photo{
+			position: absolute;
+			width: 200%;
+			left: -40%;
+		}
+		.jett-text{
+			left: -2%;
+			top: 35%;
+		}
+		.logo{
+			width: 89%;
+
+		}
+
+		button{
+		    width: 71%;
+			left: 13%;
+		}
+	}
+}
+
+
